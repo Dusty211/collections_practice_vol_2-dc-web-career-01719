@@ -35,5 +35,5 @@ def organize_schools(schools)
     else schools_by_loc[location.values.join] << school
     end
   end
-  return_h
+  schools_by_loc
 end

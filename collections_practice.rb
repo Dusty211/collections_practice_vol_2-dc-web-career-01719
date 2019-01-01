@@ -28,11 +28,11 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  return_h = {}
+  schools_by_loc = {}
   schools.each do |school, location|
-    if return_h[location.values.join].class == NilClass
-      return_h[location.values.join] = [school]
-    else return_h[location.values.join] << school
+    if schools_by_loc[location.values.join].class == NilClass
+      schools_by_loc[location.values.join] = [school]
+    else schools_by_loc[location.values.join] << school
     end
   end
   return_h

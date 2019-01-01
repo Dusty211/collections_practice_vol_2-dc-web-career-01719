@@ -1,4 +1,4 @@
-
+require 'pry'
 def begins_with_r(array)
   array.all? {|element| element.split(//).first == "r"}
 end
@@ -36,4 +36,7 @@ def organize_schools(schools)
 end
 =end
 def organize_schools(schools)
+  binding.pry
 end
+
+organize_schools(schools)

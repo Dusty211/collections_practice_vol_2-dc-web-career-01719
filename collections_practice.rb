@@ -1,6 +1,6 @@
 require 'pry'
 
-
+=begin
 schools = {
       "flatiron school bk" => {
         :location => "NYC"
@@ -20,6 +20,8 @@ schools = {
       "Hack Reactor" => {
         :location => "SF"
       }}
+      
+=end
 def begins_with_r(array)
   array.all? {|element| element.split(//).first == "r"}
 end

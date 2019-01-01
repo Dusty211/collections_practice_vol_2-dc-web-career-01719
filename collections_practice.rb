@@ -65,4 +65,4 @@ def organize_schools(schools)
   return_h
 end
 
-organize_schools(schools)
+#organize_schools(schools)

@@ -29,10 +29,10 @@ end
 
 def organize_schools(schools)
   return_h = {}
-  schools.each do |key, value|
-    if return_h[value.values.join].class == NilClass
-      return_h[value.values.join] = [key]
-    else return_h[value.values.join] << key
+  schools.each do |school, location|
+    if return_h[location.values.join].class == NilClass
+      return_h[location.values.join] = [school]
+    else return_h[location.values.join] << school
     end
   end
   return_h

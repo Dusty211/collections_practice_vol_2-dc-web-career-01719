@@ -26,11 +26,14 @@ end
 def find_cool(cool)
   cool.find_all {|hash| hash[:temperature] == "cool"}
 end
-
+=begin
 def organize_schools(schools)
   unique_locations_array = schools.collect {|hash| hash[1][:location]}.uniq
   organized_schools = Hash.new
   unique_locations_array.each {|loc| organized_schools[loc] = schools.collect {|hash| hash[0] if hash[1][:location] == loc}}
   unique_locations_array.each {|loc| organized_schools[loc] = organized_schools[loc].reject {|hash| hash == nil}}
   organized_schools
+end
+=end
+def organize_schools(schools)
 end

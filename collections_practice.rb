@@ -59,7 +59,7 @@ end
 def organize_schools(schools)
   return_h = {}
   schools.each do |key, value|
-    binding.pry
+    #binding.pry
     return_h[value.values.join].class == NilClass ? return_h[value.values.join] = [key] : return_h[value.values.join] << key
   end
   return_h

@@ -1,27 +1,4 @@
-require 'pry'
 
-=begin
-schools = {
-      "flatiron school bk" => {
-        :location => "NYC"
-      },
-      "flatiron school" => {
-        :location => "NYC"
-      },
-      "dev boot camp" => {
-        :location => "SF"
-      },
-      "dev boot camp chicago" => {
-        :location => "Chicago"
-      },
-      "general assembly" => {
-        :location => "NYC"
-      },
-      "Hack Reactor" => {
-        :location => "SF"
-      }}
-      
-=end
 def begins_with_r(array)
   array.all? {|element| element.split(//).first == "r"}
 end
@@ -58,13 +35,14 @@ def organize_schools(schools)
   organized_schools
 end
 =end
+
 def organize_schools(schools)
   return_h = {}
   schools.each do |key, value|
-    #binding.pry
-    return_h[value.values.join].class == NilClass ? return_h[value.values.join] = [key] : return_h[value.values.join] << key
+    if return_h[value.values.join].class == NilClass
+      return_h[value.values.join] = [key]
+    else return_h[value.values.join] << key
+    end
   end
   return_h
 end
-
-#organize_schools(schools)

@@ -57,10 +57,11 @@ def organize_schools(schools)
 end
 =end
 def organize_schools(schools)
+  return_h = {}
   schools.each do |key, value|
     binding.pry
   end
-  
+  return_h
 end
 
 organize_schools(schools)

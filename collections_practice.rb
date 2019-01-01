@@ -58,9 +58,9 @@ end
 =end
 def organize_schools(schools)
   schools.each do |key, value|
-    
+    binding.pry
   end
-  binding.pry
+  
 end
 
 organize_schools(schools)

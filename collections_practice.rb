@@ -19,7 +19,7 @@ schools = {
       },
       "Hack Reactor" => {
         :location => "SF"
-      }
+      }}
 def begins_with_r(array)
   array.all? {|element| element.split(//).first == "r"}
 end

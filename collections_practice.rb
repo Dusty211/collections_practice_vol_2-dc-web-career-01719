@@ -60,6 +60,7 @@ def organize_schools(schools)
   return_h = {}
   schools.each do |key, value|
     binding.pry
+    return_h[]
   end
   return_h
 end
